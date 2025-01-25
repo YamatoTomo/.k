@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;  /* Fallback background color */
+    color: #333;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;  /* Ensure body takes full height of the viewport */
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the full background */
+    z-index: -1;  /* Keeps the video behind content */
+}
+
+/* Additional content styling */
+
+
+/* Additional content styling */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 
+        -1px -1px 0 black, 
+        1px -1px 0 black, 
+        -1px 1px 0 black, 
+        1px 1px 0 black; /* Add text border effect */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.animate-text {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,   /* Top-right shadow */
+        -1px 1px 0 black,   /* Bottom-left shadow */
+        1px 1px 0 black;    /* Bottom-right shadow */
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1px;
+    padding: 1px 2px;
+    font-size: 1rem;
+    color: white;
+    background: #0070f3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-primary {
+    background: #000000;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+}
+
+.btn-secondary {
+    background: #6e6e6e;
+}
+
+.btn-secondary:hover {
+    background: #004a4d;
+}
+
+/* Section Styles */
+section {
+    margin: 50px 0;
+    padding: 20px;
+    background: #797272;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn 1.5s ease-out;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #800046;
+}
+
+section ul, section ol {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: disc;
+}
+
+section ul li, section ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #797272;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
